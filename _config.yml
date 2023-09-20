@@ -3,7 +3,7 @@ title: JiwanSeo's Blog
 description: A small and simple site I made to test out Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 theme: no-style-please
-url: "https://j1wanseo.github.io/blog"
+url: "https://j1wanseo.github.io/"
 highlighter: rouge
 markdown: kramdown
 permalink: /post/:title/
