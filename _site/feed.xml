@@ -1,17 +1,635 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-02T16:46:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/01/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-01-02T16:44:59+09:00</published><updated>2024-01-02T16:44:59+09:00</updated><id>http://localhost:4000/jekyll/update/2024/01/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/01/02/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title></title>
+		<description></description>		
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>AI Accelerator용 보드 구매기</title>
+				<description>&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+&lt;p&gt;디지털 회로 설계 엔지니어가 되고싶다는 마음에 프로젝트를 하나 직접 수행해 보면 좋을 것 같다는 생각을 했다.&lt;br /&gt;
+그렇다면 FPGA 보드를 우선 구매해야 이를 직접 테스트할 수 있을 것 같다는 생각에 FPGA 보드 종류를 여러가지 검색해 보았다. 제품을 구매하는 기준은 아래와 같았다.&lt;/p&gt;
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+&lt;h1 id=&quot;standards&quot;&gt;Standards&lt;/h1&gt;
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+&lt;ol&gt;
+  &lt;li&gt;자일링스 기반이었으면 함&lt;/li&gt;
+  &lt;li&gt;내가 FPGA에 올리고 싶은 프로그램 = AI 이므로 성능이 어느정도 보장되었으면 좋겠음&lt;/li&gt;
+  &lt;li&gt;가격이 너무 비싸지 않았으면 함 .. → 중고거래로 합리적인 가격이면 괜찮음&lt;/li&gt;
+  &lt;li&gt;IDE에 대한 강좌가 잘 있었으면 좋겠음,
+    &lt;ol&gt;
+      &lt;li&gt;나름 보편적으로 사람들이 사용하는 기기여야 문제가 발생하였을 때 참고할만한 내용이 많을 것이라 생각함.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+&lt;p&gt;위와 같은 기준으로 보드를 찾아보고 있는데 나와 비슷한(?) 상황에 놓인 인터넷 게시글을 발견하였다.&lt;br /&gt;
+&lt;a href=&quot;https://gigglehd.com/gg/hard/8936873&quot;&gt;[질문]2020.12.13 18:42 FPGA 설계에 대해서 질문드립니다.&lt;/a&gt;&lt;/p&gt;
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+&lt;p&gt;해당 글의 댓글들을 읽어보니 Zybo라는 보드가 나름 성능적 측면에서 나쁘지 않다는 것을 확인하였다. 추가적으로 웹서칭을 진행해 보니 Nexys 라는 계열의 보드도 있길래 두 보드를 한 번 비교해 보았다. 두 제품 모두 자일링스 칩셋 기반에 Digilent라는 회사에서 만드는 보드여서 해당 홈페이지 웹사이트에서 스펙을 비교해보았다.&lt;br /&gt;
+&lt;em&gt;우선 Zybo Z7를 구매한다면 z7-20 보드를 구매할 예정이라 해당 스펙으로 비교하였음&lt;/em&gt;&lt;/p&gt;
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/9aa1f9f5-bd0c-4900-bc3f-41ce69d053b6&quot; alt=&quot;image&quot; /&gt;
+&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/bbf95506-4490-4f12-9a0e-53a6727be01a&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;아무래도 User I/O 부분에서는 Nexys A7이 더 많은 지원항목을 보여주었다.&lt;br /&gt;
+중점적으로 사용하는 칩셋에서 차이가 발생하는 것을 확인할 수 있었는데, 해당 내용을 좀 더 찾아보았다.&lt;br /&gt;
+Nexys A7의 경우 Xillinx 의 Artix를 사용한다.&lt;br /&gt;
+Artix 7의 경우 &lt;a href=&quot;https://www.xilinx.com/products/silicon-devices/fpga.html&quot;&gt;Xillinx 의 FPGA 칩셋&lt;/a&gt; 중 하나인데, 28nm 공정을 사용한 FPGA 이다.&lt;/p&gt;
+
+&lt;p&gt;반면 Zybo Z7 의 경우 Zynq 7020 칩셋을 사용하며 이는 &lt;a href=&quot;https://www.xilinx.com/products/silicon-devices/soc.html&quot;&gt;Xillinx 의 SoC&lt;/a&gt; 중 하나이다.&lt;br /&gt;
+어떤 차이가 존재하는 지 궁금해서 찾아보니, Zynq의 경우 SoC 로서 ARM Cortex A9을 메인으로 사용하고, FPGA에서 사용하는 메인 함수들을 추가적으로 지원하고 있다.&lt;br /&gt;
+&lt;em&gt;이미지 클릭 시 해당 공식 문서로 이동&lt;/em&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.xilinx.com/content/dam/xilinx/support/documents/product-briefs/zynq-7000-product-brief.pdf&quot;&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/d3a30f63-9a94-4340-9e99-2113a85cc612&quot; alt=&quot;image&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;이러한 내용을 바탕으로 가격대가 조금 더 있지만 추후 범용성을 생각하여 Zybo Z7을 구매할 것 같다.&lt;/p&gt;
+
+&lt;h1 id=&quot;pynq&quot;&gt;PYNQ&lt;/h1&gt;
+
+&lt;p&gt;아무래도 가격대가 있다 보니 조금 더 저렴하게 구매할 수는 없을까? 해서 알리익스프레스 에도 검색 해 보았다.&lt;br /&gt;
+찾다보니 zynq 칩셋을 이용한 pynq라는 것을 발견하였고 이게 무엇인가 궁금하여 인터넷에 찾아보니 &lt;a href=&quot;https://github.com/Xilinx/PYNQ_Workshop/blob/master/01_PYNQ_Workshop_introduction.pdf&quot;&gt;공식문서&lt;/a&gt;가 있었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/e72ab886-a349-4b6b-a6e1-94c1aecb03ed&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;자일링스(Xilinx)에서 Python 을 활용하여 FPGA를 개발할 수 있도록 만든 프레임워크의 한 종류이고, 해당 보드 종류에 맞게 업로드 하면 네트워크로 Jupyter Notebook을 방문하여 사용할 수 있도록 만든 것이다.&lt;/p&gt;
+
+&lt;p&gt;공식 문서에서 제공하는 PYNQ Z2 보드는 하기와 같은 스펙을 가지고 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/e8da97a2-38f0-47ca-be56-3ac6f5902dfb&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;메모리는 512 MB 로 절반이고 기타 I/O도 다른 것을 확인할 수 있었다.
+같은 칩셋과 사용하고 저렴하여 TUL의 PYNQ -Z2 를 구매하기로 결정&lt;/p&gt;
+
+&lt;p&gt;국내 사이트 들에서는 가격이 생각보다 비싸서  (40만원대) &lt;a href=&quot;https://www.tulembedded.com/FPGA/ProductsPYNQ-Z2.html&quot;&gt;공식 링크&lt;/a&gt;에 있는 &lt;a href=&quot;https://kr.element14.com/tul-corporation/1m1-m000127dev/eval-board-32bit-arm-cortex-a9/dp/3605842?CMP=e-email-sys-orderack-GLB&quot;&gt;element14&lt;/a&gt;에서 구매하기로 결정했다.
+&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/5cb9671a-a251-4825-9532-4ac363830b5a&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;18.5 만원대 면 훨씬 저렴하다고 생각이 들고.. 부품 오기 전 까지 열심히 공부해야겠다.
+아 원화 결제라 달러결제 하고 싶다고 이야기 했는데 안된다는(…)  답변만 받았다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/95ea3bc7-efca-4e0c-97f0-5a2e5378c8c0&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+</description>
+				<pubDate>Mon, 19 Feb 2024 06:23:38 +0900</pubDate>
+				<link>http://localhost:4000/dnn/2024/02/19/AI-Accelerator%EC%9A%A9-%EB%B3%B4%EB%93%9C-%EA%B5%AC%EB%A7%A4%EA%B8%B0.html</link>
+				<guid isPermaLink="true">http://localhost:4000/dnn/2024/02/19/AI-Accelerator%EC%9A%A9-%EB%B3%B4%EB%93%9C-%EA%B5%AC%EB%A7%A4%EA%B8%B0.html</guid>
+			</item>
+		
+			<item>
+				<title>V. Hardware for DNN Processing</title>
+				<description>&lt;ol&gt;
+  &lt;li&gt;MAC (multiply and accumulate) Operation을 얼마나 최적화 하여 수행하는지가 중요
+    &lt;ol&gt;
+      &lt;li&gt;병렬 구조로 구성되기 쉬우며 얼마나 효과적으로 병렬 구조를 가지는 지가 중요하다.
+        &lt;ol&gt;
+          &lt;li&gt;temporal architecture
+            &lt;ol&gt;
+              &lt;li&gt;vector (SMD) &amp;amp; parallel thread (SIMT)
+                &lt;ol&gt;
+                  &lt;li&gt;ALU 전체를 중앙에서 제어하는 방식으로 사용한다.&lt;/li&gt;
+                  &lt;li&gt;memory에서 데이터를 받아 처리하는 역할을 수행하며 서로 통신하는 것은 아님&lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;spatial architecture
+            &lt;ol&gt;
+              &lt;li&gt;ALU가 자체적인 control을 가질 수 있으며 필요에 따라 memory(scratch pad/register)도 가지고 있음&lt;/li&gt;
+              &lt;li&gt;이러한 ALU 를 PE라고 부른다.&lt;/li&gt;
+              &lt;li&gt;&lt;em&gt;ASIC이나 FPGA&lt;/em&gt;에서 주로 사용하는 디자인 모델
+                &lt;ol&gt;
+                  &lt;li&gt;중복되는 data를 reuse 하는 정도를 늘려서 연산량을 ↓&lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Accelerate Kernel compuatition @ CPU/GPU
+            &lt;ol&gt;
+              &lt;li&gt;kernel이 layer MAC 연산을 할 때 효과적으로 연산하기 위해서 방법을 제공하는 것
+                &lt;ol&gt;
+                  &lt;li&gt;FC의 경우 결과물이 1x1xM (fmap의 개수) 로 출력된다&lt;/li&gt;
+                  &lt;li&gt;CONV의 경우 Matrix Mult수행 시 Toeplitz Matrix를 통해 1x1xK 의 꼴로 출력될 수 있도록 함&lt;/li&gt;
+                  &lt;li&gt;FFT를 활용하면 연산량이 확연하게 감소
+                    &lt;ol&gt;
+                      &lt;li&gt;O(N&lt;sup&gt;2&lt;/sup&gt; N&lt;sup&gt;2&lt;/sup&gt;) → O(N&lt;sup&gt;2&lt;/sup&gt;log&lt;sub&gt;2&lt;/sub&gt;N)&lt;/li&gt;
+                      &lt;li&gt;하지만 연산 량은 줄지만 계수나 기타 부호가 길어지기 때문에 메모리 소요량이 높다. (Capacity and BW)
+                        &lt;ol&gt;
+                          &lt;li&gt;해결 방안으로 filter를 미리 FFT 해놓고 들어오는 입력만 dyanmic 하게 변환하여 사용하는 방식&lt;/li&gt;
+                        &lt;/ol&gt;
+                      &lt;/li&gt;
+                    &lt;/ol&gt;
+                  &lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;Energy -Efficient Dataflow for Accelerators&lt;/p&gt;
+
+            &lt;ol&gt;
+              &lt;li&gt;MAC 연산 시 4번의 memory access가 필요하다 (3 read, 1 write)&lt;/li&gt;
+              &lt;li&gt;이 때마다 DRAM(off-chip memory)를 사용하면 전력/시간 낭비가 크다&lt;/li&gt;
+              &lt;li&gt;memory hierachy를 구성하여 필요에 따라 저장하는 공간을 다르게 구성하여 문제 해결&lt;/li&gt;
+              &lt;li&gt;이 때 DRAM과 같이 외부에 존재하는 data를 칩 내부로 가져와서 연산하는 것에 사용&lt;/li&gt;
+              &lt;li&gt;reuse를 최대한 효과적으로 많이 하는 것이 유리하다&lt;br /&gt;
+&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/600b4227-1878-4460-8a3c-c3f04d827d29&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;참고사항&quot;&gt;*참고사항&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;fmap은 CONV에서 입/출력 되는 data가 저장된 곳을 뜻함&lt;br /&gt;
+              &lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/ddd1ab6e-fd36-4e36-bdbd-29a6589cb7ba&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &amp;gt; 결국 특징 추출은 CONV이 하고 뒤에서 FC Layer가 추론하는 것 아닌가?  
+      &amp;gt; 그렇다면 FC Layer에서 quantization 하고 CONV에서 quant 하는 것은 weight 값 뿐인 것.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;psum :partial sum&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;이전 단까지의 연산 결과를 저장해 놓는 방식을 채택&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Wed, 14 Feb 2024 16:44:59 +0900</pubDate>
+				<link>http://localhost:4000/dnn/2024/02/14/V.-Hardware-for-DNN-Processing.html</link>
+				<guid isPermaLink="true">http://localhost:4000/dnn/2024/02/14/V.-Hardware-for-DNN-Processing.html</guid>
+			</item>
+		
+			<item>
+				<title>A Survey of Quantization Methods for Efficient Neural Network Inference</title>
+				<description>&lt;p&gt;[[TOC]]&lt;/p&gt;
+
+&lt;p&gt; &lt;br /&gt;
+ref.&lt;br /&gt;
+&lt;a href=&quot;https://arxiv.org/pdf/2103.13630.pdf&quot;&gt;A Survey of Quantization Methods for Efficient Neural Network Inference&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;abstract&quot;&gt;abstract&lt;/h1&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AI의 발전과 함께 CNN과 같은 Neural Network의 사용이 증가하고 있다.
+    &lt;ul&gt;
+      &lt;li&gt;Restrained Circumstance나 Hardware가 restricted된 상황에서의 computational resource의 부족을 야기한다.&lt;/li&gt;
+      &lt;li&gt;quantization has been arisen as reducing computational resources.&lt;/li&gt;
+      &lt;li&gt;normally representing floating points as 4-bit or less value could reduce memory footprint by a factor of 16x.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;general-history-of-quant&quot;&gt;general history of quant.&lt;/h1&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/d155e617-6358-4352-bc7d-1db9e8b91d85&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/5781054f-98ba-4669-90fc-17067a3da48f&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Quant가 디지털 프로세싱 영역에서도 중요해지고 있다.&lt;/li&gt;
+      &lt;li&gt;foward error 와 backward error
+        &lt;ol&gt;
+          &lt;li&gt;foward error: x → y 일 때, y*-y&lt;/li&gt;
+          &lt;li&gt;backward error: y* → x+ dx, dx&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Quant 이후에 quant. model 과 non-quant. model 사이의 구조가 크게 달라질 수 있지만, 성능에서는 매우 좋은 효과를 가짐&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;concepts-of-quant&quot;&gt;concepts of quant.&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;quant는-lxytheta에서-input-xy를-제외한-thetafp를-quant하여-사용함으로서-size를-축소하는-것&quot;&gt;quant는 l(x,y,theta)에서 input x,y를 제외한 theta(fp)를 quant하여 사용함으로서 size를 축소하는 것&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;uniform-quant&quot;&gt;uniform quant&lt;/h2&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.  Q = Int(r/S) - Z 
+2.  `S = b - a / 2^(bits) - 1: 가지고 있는 bit의 구간 사이즈`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/c4f20d1c-85df-47ea-beb2-150e02d9cf4d&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;symmetricasymmetric-quant&quot;&gt;symmetric/asymmetric quant.&lt;/h2&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;S를 설정할 때 b,a 의 값을 a = -b 로 설정하는 경우 symm. 아닌 경우 asymm.&lt;/li&gt;
+      &lt;li&gt;act. func 를 지나면 parameter &amp;gt; 0 이므로 asymm.을 수행해야 한다. 이 때에는 Zero-point 를 0으로 지정&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;static-quant-vs-dynamic-quant&quot;&gt;Static quant. VS Dynamic quant.&lt;/h2&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;clipping range를 언제 지정하는가에 따라 구분할 수 있음&lt;/li&gt;
+      &lt;li&gt;static quant.의 경우 range를 미리 지정한 값( error를 최소화할 수 있도록 설계 MSE/entropy 등 사용)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;quant-granularitygranular--그래놀라의-뜻---알갱이&quot;&gt;Quant. Granularity(granular : 그래놀라의 뜻 - 알갱이)&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;range를 어떻게 설정하고 quant를 진행하는 지가 정확도에 영향을 미치므로, range를 정하는 방법에 대해 생각해 보겠다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/9fe8428d-fcee-4e52-b575-acc85fabec29&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
+a) Layerwise Quantization&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;하나의 Layer 안에 존재하는 convolution filter들의 weight들을 모두 고려하여 범주를 계산한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;b) Groupwise Quantization&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;하나의 Layer 안에 존재하는 filter들을 그룹화 하여 range를 계산한다.&lt;/li&gt;
+  &lt;li&gt;이 경우 parameter의 값이 다양할수록 유용하다. ex) Q-BERT의 transformer&lt;/li&gt;
+  &lt;li&gt;계산량이 많아진다는 것이 단점이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;==c) Channelwise Quantization==&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;each filter 마다 range를 정하여 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;d) sub-channelwise Quantization&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;non-uniform-quant&quot;&gt;Non-uniform quant.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;non-uniformly spaced하게 quant. 를 진행하는 것&lt;br /&gt;
+  &lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/814417ba-e212-47bf-ace4-32c175d236b4&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;특정 구간 안에 존재 하는 경우 Q를 X로 배정시키는 것. i, i+1 사이의 간격은 일정하지 않다.&lt;/li&gt;
+  &lt;li&gt;만약 parameter가 ==특정 구간에서 중요도가 높거나 낮다면 해당 구간을 더 잘게 쪼개어== 구분지어 주면 되므로 정확도를 높이는 데에 기여할 수 있다.&lt;br /&gt;
+  → 종 모양의 분포를 가지는 weight에 적합하게 method 가 개발되어 있다.&lt;br /&gt;
+  ex) logarithmic distribution을 이용하여 exponentially 증가시키는 것.&lt;br /&gt;
+  ex2) binary-code-based quant.&lt;/li&gt;
+  &lt;li&gt;요즘에는 Q의 간격을 어떻게 배치하여야 quant 된 모델과 original 사이의 괴리를 줄일 수 있을지 고민하는 중.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;non-uniform이 속도 및 정확도의 측면에서 이점이 존재하지만 현재 CPU/GPU 같은 범용 프로세서를 사용하므로 uniform-quant.를 사용하는 것이 더 적합하다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;fine-tuning-methods&quot;&gt;Fine-tuning Methods&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;quant.를 진행한 후 Neural Network 의 parameter를 adjust 하는 것이 필요하다.&lt;/li&gt;
+  &lt;li&gt;두가지 방법이 존재하는데
+    &lt;ul&gt;
+      &lt;li&gt;re-training the model QAT (Quantization-Aware Training) : LEFT&lt;/li&gt;
+      &lt;li&gt;re-training 없이 수행하는 PTQ (Post-Training Quantization) : RIGHT&lt;br /&gt;
+  &lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/b94d1230-e7c3-4e62-8ef2-cbee76ddba3c&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;qat&quot;&gt;QAT&lt;/h3&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;pre-trained model의 parameter를 quantization 한다.&lt;/li&gt;
+      &lt;li&gt;이후 train-set 을 가지고 quant. 된 pre-trained model을 다시 학습하여 loss 를 줄인다.&lt;/li&gt;
+      &lt;li&gt;2번 과정 이후 fine-tuning 과정에서 parameter가 업데이트 되게 되고 이 과정 중에 quant되었던 weight들이 fp값으로 변한다. : backpropagation은 fp로 진행해야 zero gradient가 나오는 수를 막을 수 있으므로 필수적이다.&lt;/li&gt;
+      &lt;li&gt;3번의 back propagation은 Q에 대해 진행한 것으로 이를 weight r (non-quant.)에 적용하려면 해당하는 모양으로 바꾸어 주어야 한다. 이 때 사용하는 것이 &lt;em&gt;STE&lt;/em&gt;이다.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;STE : Straight Through Estimator dL/dQ를 그대로 dL/dr 로 사용하는 것&lt;br /&gt;
+rounding operation을 무시하고 적용&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;결국 re-train하는 과정에서 소모되는 비용이 크다. computational cost 가 너무 큼&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;ptq&quot;&gt;PTQ&lt;/h3&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;fine-tuning 을 진행하지 않고 quantization 한 system을 사용하는 것&lt;/li&gt;
+      &lt;li&gt;==따라서 re-train 하기 위한 추가적인 training data가 필요하지 않으므로 Data가 적은 경우에 사용하기 좋다.==&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;zsq-zero-shot-quantization&quot;&gt;ZSQ (Zero-shot Quantization)&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;quant 이후에 좋은 값을 찾는 행동 :  calibration&lt;/li&gt;
+      &lt;li&gt;quant 를 진행하게 되면 필연적으로 accuracy degradation이 발생한다.&lt;/li&gt;
+      &lt;li&gt;이를 해결하기 위해서 trainset으로  tuning을 해야하는데 training dataset에 접근하지 못하는 경우가 많다.&lt;/li&gt;
+      &lt;li&gt;이를 해결하기 위한 방법으로 ZSQ를 사용&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Level 1 : ZSQ + PTQ → no data + no finetuning
+    &lt;ul&gt;
+      &lt;li&gt;finetuning을 진행하지 않아도 되어 빠르고 쉬운 model quant.를 수행할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Level 2 : ZSQ + QAT → no data + yes finetuning
+    &lt;ul&gt;
+      &lt;li&gt;accuracy degradation 해결에 있어서 의미 있는 수치의 진전을 보임
+        &lt;blockquote&gt;
+          &lt;p&gt;ZSQ를 활용하는 제일 기본적인 방법은 GANs를 활용하는 것이다.
+그렇다면 GAN이 적합한 data를 만들었는ㄴ지 확인하는 방법으로 pre-trained model에 집어 넣어서 정확한 데이터가 생성되었는지 확인하면 된다.&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;원본 데이터를 건드리지 않고 사용한다는 메리트가 있다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;stochastic-quantization&quot;&gt;Stochastic Quantization&lt;/h2&gt;
+    &lt;p&gt;&amp;lt;&amp;gt; deterministic quantization과 달리 확률적으로 quantization을 진행하는 것
+-&amp;gt; 모든 parameter 가 quantization되지 않을 가능성을 남겨둔다.
+ gradient가 매우 작으므로  quant. 안에서 rounding되는 경우 gradient가 사라지게 됨. 이에 대한 영향을 안받을 가능성&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/e8d07b79-76f4-4a74-99fa-34b8c7f4bda6&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;quantization-below-8-bits&quot;&gt;Quantization below 8-bits&lt;/h1&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;simulated-quantization&quot;&gt;Simulated Quantization&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;parameter는 quant.값으로 저장하고 arithmetic operation은 fp로 진행하여 사용하는 것.&lt;/li&gt;
+          &lt;li&gt;따라서 quant. 된 값을 arith. op.에 넣기 위해 dequant 하는 과정이 필요하다&lt;/li&gt;
+          &lt;li&gt;이는 정확도에 영향을 주기는 한다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;integer-only-quantization&quot;&gt;Integer-only Quantization&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;parameter 와 arithmetic op. 모두 quant.된 것으로 사용&lt;/li&gt;
+          &lt;li&gt;정확도에서 손해가 존재하지만 속도, 파워, 저장 영역 등에서 이득이 더 크다.
+→ ? 일반적으로 integer-only quant.가 속도에 더 영향이 좋아서 사용하지만 bandwidth가 중요한 프로그램의 경우에는  simulated quant.를 사용하기도 한다. ( 메모리에 얼마나 자주 접근하는지가 중요하기 때문에 )&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;mixed-precision-quant&quot;&gt;mixed precision quant.&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;layer마다 여러 개의 bit로 quant.를 진행하는 것&lt;/li&gt;
+          &lt;li&gt;어떤 bit로 quant.를 진행할 지 선택하는 방법이 제일 중요한 영역이다.&lt;/li&gt;
+          &lt;li&gt;sensitice 한 경우에는 더 높은 bit를 셀렉하여 사용한다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;hardware-aware-quant&quot;&gt;Hardware Aware Quant.&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;hw에 대한 정보를 바탕으로 quant하는 것.&lt;/li&gt;
+          &lt;li&gt;lookup table 을 확인하고 이를 바탕으로 레이턴시와 같은 것을 계산해야 한다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;distillation-assisted-quant&quot;&gt;Distillation-Assisted Quant.&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;teacher 가 존재하여 그 학습한 data (parameter)를 가지고 학습에 도움을 받는 것.&lt;/li&gt;
+          &lt;li&gt;상대적으로 더 큰 모델을 이용하여 작은 모델을 학습한다.&lt;/li&gt;
+          &lt;li&gt;적합한 teacher를 고르는 것이 중요하다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;extreme-quantization&quot;&gt;Extreme Quantization&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;극단적으로 quant.를 진행하여 속도나 전력 소모를 매우 줄이는 것&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/30b44b2d-fa5a-497d-8b7c-af96f28d47df&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/304e4d1d-63da-4359-bdb8-042185aac3f0&lt;/p&gt;
+</description>
+				<pubDate>Thu, 16 Nov 2023 14:57:45 +0900</pubDate>
+				<link>http://localhost:4000/dnn/2023/11/16/A-Survey-of-Quantization-Methods-for-Efficient-Neu.html</link>
+				<guid isPermaLink="true">http://localhost:4000/dnn/2023/11/16/A-Survey-of-Quantization-Methods-for-Efficient-Neu.html</guid>
+			</item>
+		
+			<item>
+				<title>DRC errors</title>
+				<description>&lt;ul&gt;
+  &lt;li&gt;off-grid error
+    &lt;ul&gt;
+      &lt;li&gt;layout에서 e 눌러서 X/Y Snap spacing 을 너무 작게 하면 발생&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/ada5c227-b042-4630-93c3-47134156e279&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;0.005로 설정시 발생하였음&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/08f28d8b-a8d7-462e-9733-e728e90ab0dc&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;상기 설정이 이미 설계된 nand2의 설정값&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;poly contact 과 metal via는 같은 곳에 만들면 안된다,
+    &lt;ul&gt;
+      &lt;li&gt;따로 떨어뜨려서 제작해야함&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/ce9c1e9c-c5a3-4134-8179-b85a569ee48c&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;contact-via 만들기
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/cfb499ce-5eac-43c4-bfff-8df67837d160&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;위에서 Mode의 2번째인 Stack을 활용하면 한번에 여러층의 via 를 만들 수 있다.&lt;br /&gt;
+  &lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/03b5b2b7-3a7b-4a5e-a3a9-c91444f4949c&quot; alt=&quot;image&quot; /&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;contact or via에서 metal 의 minimum area를 늘리라고 DRC 에러가 발생하는 경우 row 나 col 을 늘려서 via/contact 의 사이즈를 키워주면 된다.&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/817c94c7-2114-46ed-9604-d9c6e10f5ebd&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;상기 error 발생 시 ntap or ptap ( VDD VSS )의 row 나 col을 늘려주어 사이즈를 키우면 된다.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Thu, 09 Nov 2023 11:33:21 +0900</pubDate>
+				<link>http://localhost:4000/cadence/2023/11/09/DRC-errors.html</link>
+				<guid isPermaLink="true">http://localhost:4000/cadence/2023/11/09/DRC-errors.html</guid>
+			</item>
+		
+			<item>
+				<title>parameterized cell 수정 불가능 에러</title>
+				<description>&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/236126d0-91dc-4ea7-988c-8a87e00d4dfa&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이미 주어진 nand2, nand3를 연결해서 사용하려고 하니 해당 에러가 나타났음&lt;/p&gt;
+
+&lt;p&gt;이런 에러가 발생하는 경우:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;layout 에서 i를 눌러서 불러와서 사용하였음
+    &lt;ul&gt;
+      &lt;li&gt;이렇게 하면 pcell이 잠긴 상태로 불러와져서 수정이 불가능하다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;해결방법
+    &lt;ul&gt;
+      &lt;li&gt;library manager에서 해당 layout에 들어간 이후에 원하는 것을 c 눌러서 복사하고, 내가 사용하려고 하는 layout 에 붙여넣기 해야함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/273ac576-4f49-49b3-b489-c1b19c4dda67&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;우리가 수정하려는 것이 잠긴 경우에 해결하는 방법
+    &lt;blockquote&gt;
+      &lt;p&gt;Library Manager
+File → open shell window
+clsAdminTool
+are .
+ale .&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/66222014-7465-44c1-b4da-a332f1d17563&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 07 Nov 2023 15:30:31 +0900</pubDate>
+				<link>http://localhost:4000/cadence/2023/11/07/parameterized-cell-%EC%88%98%EC%A0%95-%EB%B6%88%EA%B0%80%EB%8A%A5-%EC%97%90%EB%9F%AC.html</link>
+				<guid isPermaLink="true">http://localhost:4000/cadence/2023/11/07/parameterized-cell-%EC%88%98%EC%A0%95-%EB%B6%88%EA%B0%80%EB%8A%A5-%EC%97%90%EB%9F%AC.html</guid>
+			</item>
+		
+			<item>
+				<title>20231030 IEEE Xplore 강의</title>
+				<description>&lt;ol&gt;
+  &lt;li&gt;무엇을 검색할 지 정해라&lt;/li&gt;
+  &lt;li&gt;검색 분야 + 그 안에서 내용
+    &lt;ul&gt;
+      &lt;li&gt;ex) AI transportation에 대해 궁금하다면&lt;/li&gt;
+      &lt;li&gt;검색분야에 관련된 내용(비슷한 용어들)을 모두 넣어서 검색해라&lt;/li&gt;
+      &lt;li&gt;taxi &amp;lt;-&amp;gt; car hiring&lt;/li&gt;
+      &lt;li&gt;명사형 뿐 아니라 동사 같은 것도 넣어서 검색해라
+        &lt;ul&gt;
+          &lt;li&gt;코딩 검색하듯 transport* 로 검색하면 모든 형태를 다 포함하여 검색&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;(bullin operator 사용 가능)
+        &lt;blockquote&gt;
+          &lt;p&gt;(“artificial intelliegence” OR “computational intelligence” OR AI) AND Transport*&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;검색할 때 너무 많이 넣어서 하면 자료의 양이 너무 적다 → 적당하게 조절해서 할 것&lt;/li&gt;
+  &lt;li&gt;검색 이후 좌측 하단의 Publication Topics를 보면 검색한 논문들의 주제를 한 눈에 볼 수 있다.&lt;/li&gt;
+  &lt;li&gt;affiliation tab을 보면 원하는 곳에서 작성한 저널/논문 만을 골라서 볼 수 있다.&lt;/li&gt;
+  &lt;li&gt;비교적 최신 시기에 작성된 논문이 많은 주제를 정하는 것이 좋다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;magazine&quot;&gt;Magazine&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;그래도 좀 쉽고 짧은 내용으로 작성되어 있음&lt;/li&gt;
+  &lt;li&gt;차트/도표 등이 많이 포함되어 읽기가 쉽다.&lt;/li&gt;
+  &lt;li&gt;이를 읽는 것이 도움이 많이 될 것임 내용도 간단하게 설명해줌&lt;/li&gt;
+  &lt;li&gt;매거진을 읽으면 그 기술이 무엇인지 어떻게 활용하는지 등의 간단한 내용으로 설명해준다.&lt;/li&gt;
+  &lt;li&gt;journal 에서 개발된 내용을 가지고 어떻게 적용하는지 어떻게 사용하는지를 알려준다.
+    &lt;ul&gt;
+      &lt;li&gt;그렇다면 저널에 작성된 내용은 이미 시간이 오래 지난내용이 주를 이루는가?
+        &lt;ul&gt;
+          &lt;li&gt;일반적으로 산업에 적용되기 위해서는 시간이 필요하다고 하니까..&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;journal-paper&quot;&gt;Journal Paper&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;==solved problem==&lt;/li&gt;
+  &lt;li&gt;==이미 해결한 내용==을 가지고 논문을 작성한 것&lt;/li&gt;
+  &lt;li&gt;clear conclusions already made by clear data&lt;/li&gt;
+  &lt;li&gt;recent publications w/ answers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conference-paper&quot;&gt;Conference Paper&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;research which is ongoing&lt;/li&gt;
+  &lt;li&gt;can get feedback to use in our research&lt;/li&gt;
+  &lt;li&gt;typically shorter than journal article and less detail and fewer reference&lt;/li&gt;
+  &lt;li&gt;문제는 제안하되 ==결론 부분에 해결책이 포함되어있지 않을 수 있음==&lt;/li&gt;
+  &lt;li&gt;연구를 진행할 것이면 새로 올라오는 페이퍼를 많이 읽어라&lt;/li&gt;
+  &lt;li&gt;이에 해당하는 것은 conference paper&lt;/li&gt;
+  &lt;li&gt;이를 기반으로 새롭게 작성해도 되고 설계방식만 조금 바꿔서 다시 작성해도 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;citation&quot;&gt;Citation&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;인용 수가 높을수록 영향력이 높은 논문이라고 할 수 있다.&lt;/li&gt;
+  &lt;li&gt;year of publication과  같이 사용해야 좋다. 최근에 인용된 것이라면 트렌드를 반영하기 때문이다.&lt;/li&gt;
+  &lt;li&gt;짧은 기간에 많이 인용 → 한달에 적어도 한 번은 인용되는것&lt;/li&gt;
+  &lt;li&gt;abstract를 읽어서 확인해라&lt;/li&gt;
+  &lt;li&gt;굳이 처음부터 논문 자체를 모두 읽을 필요가 없음&lt;/li&gt;
+  &lt;li&gt;처음에는 논문을 찾고 읽어보는 것이 오래걸리겠지만 점점 더 해보면 금방 한다. abstract를 스캔하면서 읽으면 된다.&lt;/li&gt;
+  &lt;li&gt;reference를 찾으면 원래의 내용을 찾아갈 수 있다. 이를 통해서 해당 기술에 대한 타임라인을 완성할 수 있다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;논문을 작성한 사람들에 대한 정보가 포함되어 있을 것이다.&lt;/li&gt;
+  &lt;li&gt;들어가보면 같이 연구하는 사람들에 대한 내용이 있음. 보통 같이 일하는 사람들이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;set-search-alerts&quot;&gt;Set Search Alerts&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;새로운 논문이 나왔을 때 이를 찾아보기 위해 직접 검색하는 것이 아니라 ‘알림 설정’을 하는 것&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;연구에 있어서 이러한 과정을 직접 해보는 것은 좋은 연습이 될 것&lt;/em&gt;&lt;/p&gt;
+</description>
+				<pubDate>Mon, 30 Oct 2023 06:22:24 +0900</pubDate>
+				<link>http://localhost:4000/2023/10/30/IEEE-Xplore-%EA%B0%95%EC%9D%98.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2023/10/30/IEEE-Xplore-%EA%B0%95%EC%9D%98.html</guid>
+			</item>
+		
+	</channel>
+</rss>
