@@ -171,8 +171,8 @@ hr {
     border-style: none;
 }
 #main {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 ul {
 	margin: 20px;
@@ -192,7 +192,7 @@ a:hover {
     color: #274977
 }
 #main p img {
-    width: 100%
+    width: 110%
 }
 article p a {
     border-bottom: 1px solid #e4edf9 font-weight: normal;
