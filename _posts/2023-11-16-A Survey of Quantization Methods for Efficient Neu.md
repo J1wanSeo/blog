@@ -31,8 +31,10 @@ ref.
     
 2.  # general history of quant.
     
-    ![8a5bc709283aa11bafea6d25d13ad5fb.png](../../_resources/8a5bc709283aa11bafea6d25d13ad5fb.png)  
-    ![8828f1f8ea538f080df5853a258ab5c5.png](../../_resources/8828f1f8ea538f080df5853a258ab5c5.png)
+    ![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/d155e617-6358-4352-bc7d-1db9e8b91d85)
+  
+    ![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/5781054f-98ba-4669-90fc-17067a3da48f)
+
     
     1.  Quant가 디지털 프로세싱 영역에서도 중요해지고 있다.
     2.  foward error 와 backward error
@@ -51,7 +53,7 @@ ref.
     ```
     
 
-![49500297e06b7ebad553587f6f9dda29.png](../../_resources/49500297e06b7ebad553587f6f9dda29.png)
+![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/c4f20d1c-85df-47ea-beb2-150e02d9cf4d)
 
 3.  ## symmetric/asymmetric quant.
     
@@ -66,7 +68,7 @@ ref.
 
 - range를 어떻게 설정하고 quant를 진행하는 지가 정확도에 영향을 미치므로, range를 정하는 방법에 대해 생각해 보겠다.
 
-![186622868311c4a5a788d4f5c30e8aa2.png](../../_resources/186622868311c4a5a788d4f5c30e8aa2.png)  
+![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/9fe8428d-fcee-4e52-b575-acc85fabec29)  
 a) Layerwise Quantization
 
 - 하나의 Layer 안에 존재하는 convolution filter들의 weight들을 모두 고려하여 범주를 계산한다.
@@ -87,7 +89,7 @@ d) sub-channelwise Quantization
     
 
 - non-uniformly spaced하게 quant. 를 진행하는 것  
-    ![a6b69d87aab9c7b6751d5fe9c1507c60.png](../../_resources/a6b69d87aab9c7b6751d5fe9c1507c60.png)
+    ![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/814417ba-e212-47bf-ace4-32c175d236b4)
 - 특정 구간 안에 존재 하는 경우 Q를 X로 배정시키는 것. i, i+1 사이의 간격은 일정하지 않다.
 - 만약 parameter가 ==특정 구간에서 중요도가 높거나 낮다면 해당 구간을 더 잘게 쪼개어== 구분지어 주면 되므로 정확도를 높이는 데에 기여할 수 있다.  
     → 종 모양의 분포를 가지는 weight에 적합하게 method 가 개발되어 있다.  
@@ -104,7 +106,7 @@ d) sub-channelwise Quantization
 - 두가지 방법이 존재하는데
     - re-training the model QAT (Quantization-Aware Training) : LEFT
     - re-training 없이 수행하는 PTQ (Post-Training Quantization) : RIGHT  
-        ![14b33ca8d5e3f1d001803495d292cb62.png](../../_resources/14b33ca8d5e3f1d001803495d292cb62.png)
+        ![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/b94d1230-e7c3-4e62-8ef2-cbee76ddba3c)
 
 1.  ### QAT
     
@@ -143,7 +145,7 @@ d) sub-channelwise Quantization
 -> 모든 parameter 가 quantization되지 않을 가능성을 남겨둔다.
  gradient가 매우 작으므로  quant. 안에서 rounding되는 경우 gradient가 사라지게 됨. 이에 대한 영향을 안받을 가능성
  
-![KakaoTalk_Photo_2023-12-01-10-42-33.jpeg](../../_resources/KakaoTalk_Photo_2023-12-01-10-42-33.jpeg)
+![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/e8d07b79-76f4-4a74-99fa-34b8c7f4bda6)
 
 4. # Quantization below 8-bits
 	1. ## Simulated Quantization
@@ -175,7 +177,7 @@ d) sub-channelwise Quantization
 	
 	
 	
-![KakaoTalk_Photo_2023-12-01-10-41-44.png](../../_resources/KakaoTalk_Photo_2023-12-01-10-41-44.png)
+![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/30b44b2d-fa5a-497d-8b7c-af96f28d47df)
 
 
-![9d3019156a3a94e289e0ce95c6af2deb.png](../../_resources/9d3019156a3a94e289e0ce95c6af2deb.png)
+![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/304e4d1d-63da-4359-bdb8-042185aac3f0
