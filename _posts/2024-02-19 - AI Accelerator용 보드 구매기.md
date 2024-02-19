@@ -1,12 +1,15 @@
 ---
 layout: post
-title: AI Accelerator용 보드 구매기
+title: "AI Accelerator용 보드 구매기"
 categories: DNN
-updated: 2024-02-19 06:23:38Z
-created: 2024-02-19 03:32:26Z
-latitude: 37.56653500
-longitude: 126.97796920
-altitude: 0.0000
+tags:
+  - [ FPGA, SoC ]
+
+toc: true
+toc_sticky: true
+
+date: 2024-02-19 06:23:38+09
+last_modifed_at: 2024-02-19 06:23:38+09
 ---
 
 # Background
