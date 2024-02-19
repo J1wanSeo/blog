@@ -1,5 +1,7 @@
 ---
+layout: post
 title: AI Accelerator용 보드 구매기
+categories: DNN
 updated: 2024-02-19 06:23:38Z
 created: 2024-02-19 03:32:26Z
 latitude: 37.56653500
