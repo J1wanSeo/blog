@@ -6,6 +6,7 @@ created: 2024-02-23 02:09:43Z
 categories: Quantization
 tags:
   - [ FPGA, SoC, quantization ]
+use_math: true
 latitude: 37.56653500
 longitude: 126.97796920
 altitude: 0.0000
