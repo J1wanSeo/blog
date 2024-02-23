@@ -68,7 +68,7 @@ $
 또한, Clipping method를 통해서 MSE error를 줄일 수 있다.
 	-  clipping 수행 시 $\Delta'$를 줄일 수 있으므로 위의 3번 식에서 분자가 줄어든다.
 ## Advantages
-- regression이나 backpropagation을 사용하지 않는다.
+- regression이나 back propagation을 사용하지 않는다.
 -  calibration set에 의존성이 매우 낮다.
 	-  average magnitude per channel 을 사용하므로 
 	-  이를 통해서 over-fitting의 문제도 해결할 수 있다.
