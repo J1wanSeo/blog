@@ -36,7 +36,8 @@ ref : [AWQ: Activation-aware Weight Quantization for LLM Compression and Acceler
 - FP16으로 quantization하지 않는 것이 아니라 다른 방법으로 보존하는 방법을 알면 좋음
 
 ## 2.2 Protecting Salient Weights by Activation-aware Scaling
-![Screenshot 2024-02-23 at 12.47.48.jpg](../../_resources/Screenshot%202024-02-23%20at%2012.47.48.jpg)
+![image](https://github.com/J1wanSeo/j1wanseo.github.io/assets/106726102/ce647e72-8dfc-47e5-b785-a342c1f281d3)
+
 
 - quantization error 를 줄이는 방법으로 per-channel scaling 를 사용하면 hw inefficiency issue를 줄일 수 있다.
 $
