@@ -7,6 +7,11 @@ author:
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
   
+# Conversion
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 # Build settings
 
