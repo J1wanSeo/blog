@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
+##### as of 08 APR 2024
 # Jiwan Seo
 Undergraduate Student at Chung-ang University ( Seoul )
 [mehobase@cau.ac.kr](mailto:mehobase@cau.ac.kr)
@@ -19,14 +19,12 @@ Undergraduate Student at Chung-ang University ( Seoul )
 
 # Research Interests
 
-- Network Quantization at Neural Network
-- Hardware Accelerator
+- SW efficient HW Design
 
 # Research Experiences
 
-- Research Intern at School of Electrical and Electronics Engineering, Chung-ang University / High Performance System Architecture Lab. (JUN 2023 ~ FEB 2024)
-- Decomposition of CNN (Yolo) Structure from Yolo v1 to Yolo v4 with darknet code
-- Network Quantization to optimize CNN at limited design cost and performance device
+- Research Intern at School of Electrical and Electronics Engineering, Chung-ang University / High Performance System Architecture Lab. (JUN 2023 ~ Current)
+- Efficient HW structure for Deep Neural Networks
 
 # Activities
 
