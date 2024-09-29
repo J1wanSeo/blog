@@ -38,7 +38,7 @@ https://www.coupang.com/vp/products/7970106867
 1.  ## 120V Transformer
     
 
-![image](https://github.com/J1wanSeo/j1wanseo.github.io/blob/main/_posts/_resources/36ccfa9e585d7cd1e9292f6d7c2e9b96.png)
+![image](https://github.com/J1wanSeo/j1wanseo.github.io/blob/main/_posts/_resources/36ccfa9e585d7cd1e9292f6d7c2e9b96)
 
 120V 를 15.5V/1.1A or 9V/0.5A 로 바꾸어 주는 것 같다.
 
