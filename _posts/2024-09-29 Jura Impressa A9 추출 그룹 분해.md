@@ -58,11 +58,12 @@ Transformer를 거치지 않고 120V/230V 가 직접 들어가는 것 같다.
 4.  ## PCB
     
 
-파워보드가 기본적으로 120V를 입력으로 받아서 사용하게 되고, 이 때문에 바꾸어 주어야 하는 것 같다(?) 는 의심이 든다. 근데 안에 존재하는 VAC가 16A250V 라고 쓰여있는 거로![36ccfa9e585d7cd1e9292f6d7c2e9b96.png] 봐서는 공통적으로 사용되는 부품인 것 같기도 하다.
+파워보드가 기본적으로 120V를 입력으로 받아서 사용하게 되고, 이 때문에 바꾸어 주어야 하는 것 같다(?) 는 의심이 든다. 근데 안에 존재하는 VAC가 16A250V 라고 쓰여있는 거로!!!
+![36ccfa9e585d7cd1e9292f6d7c2e9b96.png] 봐서는 공통적으로 사용되는 부품인 것 같기도 하다.
 
-[](https://github.com/J1wanSeo/j1wanseo.github.io/blob/main/_posts/_resources/1492087b285ad0d5983aad5629e821a3.png)
+![1492087b285ad0d5983aad5629e821a3.png](https://github.com/J1wanSeo/j1wanseo.github.io/blob/main/_posts/_resources/1492087b285ad0d5983aad5629e821a3.png)
 
-[](https://github.com/J1wanSeo/j1wanseo.github.io/blob/main/_posts/_resources/6695f6f140789891da8c82bcfef009c9.png)
+![6695f6f140789891da8c82bcfef009c9.png](https://github.com/J1wanSeo/j1wanseo.github.io/blob/main/_posts/_resources/6695f6f140789891da8c82bcfef009c9.png)
 
 다른 사이트에 존재하는 230V PCB 부품, 대략적인 구조와 부품이 동일 한 것을 찾아볼 수 있다.  
 하지만 검증된 것은 아니다.
