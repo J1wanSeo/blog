@@ -1,5 +1,5 @@
 ---
-title: [Pytorch] MNIST FC 4-bit quantization
+title: pyTorch MNIST FC 4-bit quantization
 layout: post
 date: 2024-09-29 08:39:28Z
 created: 2024-09-29 06:52:19Z
