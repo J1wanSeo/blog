@@ -4,14 +4,15 @@ layout: post
 date: 2024-09-29 04:02:26Z
 created: 2024-09-29 02:40:00Z
 categories: Jura
+toc: true
+toc_sticky: true
 latitude: 37.56653500
 longitude: 126.97796920
 altitude: 0.0000
 ---
 
-## 개요
+# 개요
 
-* * *
 
 어쩌다 보니 Jura(유라)의 커피머신 Impressa A9 를 가지게 되었다.  
 문제는 해당 제품이 북미향 제품이라 120V를 지원하다는 점이었다.
@@ -22,26 +23,30 @@ altitude: 0.0000
 
 그러므로 대부분의 분해 방법은 해당 링크를 참고하면 될 듯하다.
 
-https://ko.ifixit.com/Teardown/Jura+Impressa+A9+Teardown/62543?srsltid=AfmBOopOugPwlfDzD_JhLLqLIQdRIkTmVy-FAqLwBFIenWs_3jkDe3H9
+[링크](https://ko.ifixit.com/Teardown/Jura+Impressa+A9+Teardown/62543?srsltid=AfmBOopOugPwlfDzD_JhLLqLIQdRIkTmVy-FAqLwBFIenWs_3jkDe3H9)
 
 생각보다 많은 힘을 필요로 하니.. 개인적으로 별나사가 많아 힘들었다.
 
 손이 잘 안들어가서 결국에는 쿠팡에서 전동 드라이버용 별나사 비트를 사서 해결했다.  
-https://www.coupang.com/vp/products/7970106867
+[https://www.coupang.com/vp/products/7970106867](https://www.coupang.com/vp/products/7970106867)
 
 분해 후 정확하게 어떤 부품이 있나 확인해 보기 위해 찾아본 결과 부품의 정보가 들어있는 pdf 가 있었다.
+
+[Jura A9 Parts Diagram.pdf](https://github.com/user-attachments/files/17177769/Jura.A9.Parts.Diagram.pdf)
+
+*해당 문서는 DeepL을 통해 독일어를 영어로 번역한 문서이다.*
 
 해당 도면을 참고한 결과 바꾸어야 되는 부품으로는
 
 * * *
-
-1.  ## 120V Transformer
+# 부품 목록
+## 120V Transformer
     
 ![image](https://github.com/user-attachments/assets/6dd4266e-9ad0-4656-a4cd-39be41009447)
 
 120V 를 15.5V/1.1A or 9V/0.5A 로 바꾸어 주는 것 같다.
 
-2.  ## Grinder Motor (DOMEL 482.3.504)
+## Grinder Motor (DOMEL 482.3.504)
     
 
 
@@ -49,7 +54,7 @@ https://www.coupang.com/vp/products/7970106867
 
 Transformer를 거치지 않고 120V/230V 가 직접 들어가는 것 같다.  
 
-3.  ## Water Pump Motor (SYSKO.SAP.HP4)
+## Water Pump Motor (SYSKO.SAP.HP4)
     
 
 
@@ -58,7 +63,7 @@ Transformer를 거치지 않고 120V/230V 가 직접 들어가는 것 같다.
 
 2번과 마찬가지로 120V/230V 가 직접 들어가는 듯 하다.
 
-4.  ## PCB
+## PCB
     
 
 ![image](https://github.com/user-attachments/assets/784b423f-1cbb-44cf-b9a4-daa85557f22c) 
@@ -87,7 +92,7 @@ Transformer를 거치지 않고 120V/230V 가 직접 들어가는 것 같다.
 
 > 아쉬운 점은 해당 PCB Schematic 이 있으면 훨씬 쉬울 것 같은데 이게 없다는 점이다.
 
-5.  ## 기타
+## 기타
     
 
 ![image](https://github.com/user-attachments/assets/9cc52664-ad97-4109-b1c9-9210b9d17350)
@@ -100,7 +105,7 @@ Gear Motor가 12V를 사용하는것으로 보았을 때 Encoder/Gear Motor 는 
 
 * * *
 
-## 결론
+# 결론
 
 결국 나의 생각으로는 PCB 를 제외하고 3개를 바꾸면 될 것 같은데 해외 사이트에서 부품을 검색해보니 새 제품으로 하는 경우에는 이미 $200 을 넘는다.
 
