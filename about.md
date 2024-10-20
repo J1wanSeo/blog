@@ -14,7 +14,7 @@ Undergraduate Student at Chung-ang University ( Seoul )
 
 # Education
 | --- | --- | --- |
-| **MAR 2019 ~ Present** | **Chung-ang University**<br><br>College of ICT Engineering<br><br>School of Electrical and Electronics Engineering<br><br>Bachelor Student<br><br>**GPA**: 4.15 / 4.5 (3.97 / 4.3)<br><br>**Major GPA**: 4.39 / 4.5 (4.19 / 4.3) | **Seoul , Republic of Korea** |
+| **MAR 2019 ~ Present** | **Chung-ang University**<br><br>College of ICT Engineering<br><br>School of Electrical and Electronics Engineering<br><br>Bachelor Student<br><br>**GPA**: 4.19 / 4.5 <br><br>**Major GPA**: 4.42 / 4.5  | **Seoul , Republic of Korea** |
 | **MAR 2023 ~ Present** | **Chung-ang University**<br><br>Semiconductor Design Specialized Track | **Seoul , Republic of Korea** |
 
 # Research Interests
